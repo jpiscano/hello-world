@@ -62,6 +62,40 @@
             document.write("The result of 1 == 1 && 2 == 2 is " + (1 == 1 && 2 == 2) + "<br>");
             document.write("The result of 1 == 1 || 2 == 3 is " + (1 == 1 || 2 == 3) + "<br>");
             document.write("The result of !(1 == 1) is " + !(1 == 1) + "<br>");
+
+            PetArray = new Array();
+            PetArray[0] = 'Cat';
+            PetArray[1] = 'Dog';
+            PetArray[2] = 'Fish';
+            document.write(PetArray + "<br>");
+            DrinkArray = new Array('Milk','Water','Soda');
+            document.write(DrinkArray + "<br>");
+            FoodArray = ['Pasta', 'Cheese', 'Tomato'];
+            document.write(FoodArray + "<br>");
+
+            SoccerTeam = new Array();
+            SoccerTeam['Andy'] = 10;
+            SoccerTeam['Kathy'] = 8;
+            SoccerTeam['Mary'] = 9;
+            document.write("Kathy is age  " + SoccerTeam['Kathy'] + "<br>");
+
+            SoccerTeam2 = 
+            {
+                'Fred' : 10,
+                'Jim' : 9,
+                'Bob' : 10
+            }
+            document.write("Fred is age " + SoccerTeam2['Fred'] + "<br>");
+
+            Information =
+            {
+                'Name' : 'Jim',
+                'Age' : 25,
+                'Weight' : 170,
+                'Address' : '2 Main Street'
+            }
+            document.write(Information['Address'] + "<br>");
+
     </script>
 </body>
 </html>
