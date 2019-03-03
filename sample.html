@@ -110,6 +110,41 @@
              {
                  document.write('[' + i + '] is ' + v + '<br>');
              }
+
+             age = "13-17";
+
+             if (age == "0-1")
+             {
+                document.write("you are a baby<br>");
+             }
+             else if (age == "2-12"){
+                document.write("you are a child<br>");
+             }
+             else if (age == "13-17")
+             {
+                document.write("you are a teenager<br>");
+             }
+
+             age = "2-12"
+
+             switch (age)
+             {
+                case "0-1": document.write("you are a baby<br>")
+                        break
+                case "2-12": document.write("you are a child<br>")
+                        break
+                case "13-17": docuement.write("you are an adult<br>")
+                        break
+                default: document.write("you are an adult<br>")
+                        break
+             }
+
+             icecream = true
+             document.write("You " + (icecream ? 'like':'dislike') + ' icecream.<br>')
+             result = 15 < 24 ? 'like' : 'dislike'
+             document.write(result)
+
+             
     </script>
 </body>
 </html>
