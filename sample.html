@@ -142,9 +142,56 @@
              icecream = true
              document.write("You " + (icecream ? 'like':'dislike') + ' icecream.<br>')
              result = 15 < 24 ? 'like' : 'dislike'
-             document.write(result)
-
+             document.write(result + '<br>');
              
+             //Function calls
+             document.write(SquareRoot(4) + '<br>');
+
+             function SquareRoot(i)
+             {
+                 return Math.pow(i, .5);
+             }
+             
+             document.write(StrRepeat("Hip hip, horray. ", 3));
+
+             function StrRepeat(s, r)
+             {
+                 return new Array(++r).join(s);
+             }
+
+             document.write('<br>Start counting...');
+
+             setTimeout(function()
+             {
+                 alert('You should have countecd to 5!');
+             }, 5000);
+
+             document.write('<br>');
+
+             Example1(1,2);
+
+             function Example1(a, b, c)
+             {
+                 document.write(a + ' ' + b + ' ' + c + '<br>');
+             }
+
+             Example2(1,2);
+
+             function Example2(a, b, c)
+             {
+                 c = typeof c == 'undefined' ? 'Var-3' : c
+
+                 document.write(a + ' ' + b + ' ' + c + '<br>');
+             }
+
+             document.write(Deobfruscate("jim" + "@" + 'hotmail' + '.com'));
+
+             function Deobfruscate()
+             {
+                 s = '';
+                 for (e in arguments) s += arguments[e];
+                 return s;
+             }
     </script>
 </body>
 </html>
